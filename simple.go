@@ -2,10 +2,10 @@ package simple
 
 import (
 	"fmt"
+	"github.com/go-mach/gm/gm"
 	"log"
 	"time"
 
-	"github.com/go-mach/gm/gm"
 )
 
 // SimpleGear .
@@ -26,6 +26,7 @@ func (sg *SimpleGear) Start(m *gm.Machinery) {
 }
 
 // Configure .
-func (sg *SimpleGear) Configure(config interface{}) {
+func (sg *SimpleGear) Configure(config map[string]interface{}) {
 	log.Printf("%s configured", sg.Name())
+	log.Printf("Gear Name: %s\n", config["name"])
 }
