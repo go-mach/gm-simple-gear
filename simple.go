@@ -11,6 +11,12 @@ type SimpleGear struct {
 	gm.BaseGear
 }
 
+type UUIDGear struct {
+	uuid int
+}
+
+//////////// SimpleGear
+
 // Name .
 func (sg *SimpleGear) Name() string {
 	return "simple-gear"
@@ -30,3 +36,23 @@ func (sg *SimpleGear) Configure(config interface{}) {
 	log.Printf("%s configured", sg.Name())
 	log.Printf("Gear Name: %s\n", sg.Config["name"])
 }
+
+//////////// UUIDGear
+
+// Name .
+func (ug *UUIDGear) Name() string {
+	return "uuid-gear"
+}
+
+// Start .
+func (ug *UUIDGear) Start(m *gm.Machinery) {
+	ug.uuid = 1232
+}
+
+func (ug *UUIDGear) UUID() int {
+	return ug.uuid
+}
+
+
+
+
