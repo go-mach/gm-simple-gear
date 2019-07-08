@@ -43,6 +43,10 @@ func (sg *SimpleGear) Configure(config interface{}) {
 	log.Printf("Gear Name: %s\n", sg.Config["name"])
 }
 
+func (sg *SimpleGear) Provide() interface{} {
+	return nil
+}
+
 //////////// UUIDGear
 
 // Name .
