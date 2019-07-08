@@ -23,6 +23,13 @@ github.com/go-logfmt/logfmt v0.3.0/go.mod h1:Qt1PoO58o5twSAckw1HlFXLmHsOX5/0LbT9
 github.com/go-logfmt/logfmt v0.4.0/go.mod h1:3RMwSq7FuexP4Kalkev3ejPJsZTpXXBr9+V4qmtdjCk=
 github.com/go-mach/gm v0.0.0-20190708132715-32d2495e4d22 h1:O6D/WUylgOv0bn9n2Gvav7LFcxAvhY+NIt5wwFVdp/k=
 github.com/go-mach/gm v0.0.0-20190708132715-32d2495e4d22/go.mod h1:MzxalC6AKnwffifkLiGa//qyBuHy7hnrqV3Oa/LgwDY=
+github.com/go-mach/gm v0.0.0-20190708141310-f47e573e4597 h1:9PloO+NOL7h/AYYp4DrTDc89Qnolhz8kPknprCsIEqk=
+github.com/go-mach/gm v0.0.0-20190708141310-f47e573e4597/go.mod h1:qjo4X/BGec2S+gcdok/goj1ryEqES8UmG3SAFGzr/nY=
+github.com/go-mach/gm v0.0.0-20190708141448-1652d52694e0 h1:2XRtmo81YfOJAESHW19s2kC9dDUwiCoYdX+IlG07wl0=
+github.com/go-mach/gm v0.0.0-20190708141448-1652d52694e0/go.mod h1:qjo4X/BGec2S+gcdok/goj1ryEqES8UmG3SAFGzr/nY=
+github.com/go-mach/gm v0.0.0-20190708141602-38f0249733ef h1:wDxfS6wZtPkzIlJy0NFzM4v69kmeOTL7YGdQVqC8nBI=
+github.com/go-mach/gm v0.0.0-20190708141602-38f0249733ef/go.mod h1:qjo4X/BGec2S+gcdok/goj1ryEqES8UmG3SAFGzr/nY=
+github.com/go-mach/gm-simple-gear v0.0.0-20190708133524-2cb844d9f0ca/go.mod h1:Tmd+7o82cJyPpDnFSFO3t/mZ4530dgl1WiNmAy+6Eb8=
 github.com/go-stack/stack v1.8.0/go.mod h1:v0f6uXyyMGvRgIKkXu+yp6POWl0qKG85gN/melR3HDY=
 github.com/gogo/protobuf v1.1.1/go.mod h1:r8qH/GZQm5c6nD/R0oafs1akxWv10x8SbQlK7atdtwQ=
 github.com/gogo/protobuf v1.2.1/go.mod h1:hp+jE20tsWTFYpLwKvXlhS1hjn+gTNwPg2I6zVXpSg4=
