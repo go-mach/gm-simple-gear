@@ -26,6 +26,12 @@ func (sg *SimpleGear) Name() string {
 func (sg *SimpleGear) Start(m *gm.Machinery) {
 	for {
 		log.Printf("configuration: %v", sg.Config)
+		uuidGear := (*m.GetGear("uuid-gear")).(*UUIDGear)
+		// uGear, ok := (*uuidGear).(*UUIDGear)
+		//if ok {
+		log.Printf("UUID: %s", uuidGear.Provide())
+		//}
+
 		time.Sleep(2 * time.Second)
 	}
 }
@@ -49,7 +55,7 @@ func (ug *UUIDGear) Start(m *gm.Machinery) {
 	ug.uuid = 1232
 }
 
-func (ug *UUIDGear) UUID() int {
+func (ug *UUIDGear) Provide() interface{} {
 	return ug.uuid
 }
 
