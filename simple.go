@@ -20,11 +20,8 @@ type UUIDGear struct {
 //////////// SimpleGear
 
 // NewSimpleGear .
-func NewSimpleGear() *SimpleGear {
-	// simpleGear := &SimpleGear{}
-	// simpleGear.UniqueName = "SimpleGearUNIQUE"
-	// return simpleGear
-	return &SimpleGear{ConfigurableGear: gm.NewConfigurableGear("****SimpleGear****", nil)}
+func NewSimpleGear(uname string, config map[string]interface{}) *SimpleGear {
+	return &SimpleGear{ConfigurableGear: gm.NewConfigurableGear("****SimpleGear****", config)}
 }
 
 // Name .
