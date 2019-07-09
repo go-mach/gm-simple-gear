@@ -42,6 +42,14 @@ github.com/go-mach/gm v0.0.0-20190709091537-e23304e794f5 h1:MMoUTvHO9AJEZ94Rg6n4
 github.com/go-mach/gm v0.0.0-20190709091537-e23304e794f5/go.mod h1:qjo4X/BGec2S+gcdok/goj1ryEqES8UmG3SAFGzr/nY=
 github.com/go-mach/gm v0.0.0-20190709093104-c1467a7ce6db h1:qFiMLy451FLoqH40WLMntEgLp8Lx/CqKJ91Qd46bZNo=
 github.com/go-mach/gm v0.0.0-20190709093104-c1467a7ce6db/go.mod h1:qjo4X/BGec2S+gcdok/goj1ryEqES8UmG3SAFGzr/nY=
+github.com/go-mach/gm v0.0.0-20190709095735-cfebbd837ffc h1:WXqSTh4n2gTeRJyyHYeX332NccEa5gQs7XnGH5Pb7pQ=
+github.com/go-mach/gm v0.0.0-20190709095735-cfebbd837ffc/go.mod h1:qjo4X/BGec2S+gcdok/goj1ryEqES8UmG3SAFGzr/nY=
+github.com/go-mach/gm v0.0.0-20190709095926-0071368d863e h1:rc7X8Ufh0Df/7KinBQM8VRgQg2zhT9U+QM8PE92a824=
+github.com/go-mach/gm v0.0.0-20190709095926-0071368d863e/go.mod h1:qjo4X/BGec2S+gcdok/goj1ryEqES8UmG3SAFGzr/nY=
+github.com/go-mach/gm v0.0.0-20190709100058-c73979542a45 h1:HpxNED73Hq0I6v4lid2rUZA53G5W40/7PKg5sKGwJzI=
+github.com/go-mach/gm v0.0.0-20190709100058-c73979542a45/go.mod h1:qjo4X/BGec2S+gcdok/goj1ryEqES8UmG3SAFGzr/nY=
+github.com/go-mach/gm v0.0.0-20190709102047-65812c88c05d h1:4DyeEBSVFqI4/40cJx+v1IGq4pMX0N+KH0emgzLFkiw=
+github.com/go-mach/gm v0.0.0-20190709102047-65812c88c05d/go.mod h1:qjo4X/BGec2S+gcdok/goj1ryEqES8UmG3SAFGzr/nY=
 github.com/go-mach/gm-simple-gear v0.0.0-20190708133524-2cb844d9f0ca/go.mod h1:Tmd+7o82cJyPpDnFSFO3t/mZ4530dgl1WiNmAy+6Eb8=
 github.com/go-stack/stack v1.8.0/go.mod h1:v0f6uXyyMGvRgIKkXu+yp6POWl0qKG85gN/melR3HDY=
 github.com/gogo/protobuf v1.1.1/go.mod h1:r8qH/GZQm5c6nD/R0oafs1akxWv10x8SbQlK7atdtwQ=

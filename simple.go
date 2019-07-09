@@ -9,7 +9,7 @@ import (
 
 // SimpleGear .
 type SimpleGear struct {
-	gm.BaseGear
+	gm.ConfigurableGear
 }
 
 // UUIDGear .
@@ -18,6 +18,14 @@ type UUIDGear struct {
 }
 
 //////////// SimpleGear
+
+// NewSimpleGear .
+func NewSimpleGear() *SimpleGear {
+	// simpleGear := &SimpleGear{}
+	// simpleGear.UniqueName = "SimpleGearUNIQUE"
+	// return simpleGear
+	return &SimpleGear{gm.NewConfigurableGear("****SimpleGear****", nil)}
+}
 
 // Name .
 func (sg *SimpleGear) Name() string {
