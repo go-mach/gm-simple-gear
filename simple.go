@@ -21,12 +21,12 @@ type UUIDGear struct {
 
 // NewSimpleGear .
 func NewSimpleGear(uname string, config map[string]interface{}) *SimpleGear {
-	return &SimpleGear{ConfigurableGear: gm.NewConfigurableGear("****SimpleGear****", config)}
+	return &SimpleGear{ConfigurableGear: gm.NewConfigurableGear(uname, config)}
 }
 
 // Name .
 func (sg *SimpleGear) Name() string {
-	return sg.ConfigurableGear.BaseGear.UniqueName
+	return sg.UniqueName
 }
 
 // Start .
