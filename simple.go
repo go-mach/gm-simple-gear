@@ -29,7 +29,7 @@ func NewSimpleGear() *SimpleGear {
 
 // Name .
 func (sg *SimpleGear) Name() string {
-	return "simple-gear"
+	return sg.UniqueName
 }
 
 // Start .
