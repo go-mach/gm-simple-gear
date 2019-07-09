@@ -29,7 +29,7 @@ func NewSimpleGear() *SimpleGear {
 
 // Name .
 func (sg *SimpleGear) Name() string {
-	return sg.UniqueName
+	return sg.ConfigurableGear.BaseGear.UniqueName
 }
 
 // Start .
