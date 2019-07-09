@@ -24,7 +24,7 @@ func NewSimpleGear() *SimpleGear {
 	// simpleGear := &SimpleGear{}
 	// simpleGear.UniqueName = "SimpleGearUNIQUE"
 	// return simpleGear
-	return &SimpleGear{gm.NewConfigurableGear("****SimpleGear****", nil)}
+	return &SimpleGear{ConfigurableGear: gm.NewConfigurableGear("****SimpleGear****", nil)}
 }
 
 // Name .
