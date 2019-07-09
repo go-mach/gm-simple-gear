@@ -1,9 +1,10 @@
 package simple
 
 import (
-	"github.com/go-mach/gm/gm"
 	"log"
 	"time"
+
+	"github.com/go-mach/gm/gm"
 )
 
 // SimpleGear .
@@ -11,6 +12,7 @@ type SimpleGear struct {
 	gm.BaseGear
 }
 
+// UUIDGear .
 type UUIDGear struct {
 	uuid int
 }
@@ -26,7 +28,7 @@ func (sg *SimpleGear) Name() string {
 func (sg *SimpleGear) Start(m *gm.Machinery) {
 	for {
 		log.Printf("configuration: %v", sg.Config)
-		uuidGear := (*m.GetGear("uuid-gear")).(*UUIDGear)
+		uuidGear := (m.GetGear("uuid-gear"))
 		// uGear, ok := (*uuidGear).(*UUIDGear)
 		//if ok {
 		log.Printf("UUID: %s", uuidGear.Provide())
@@ -43,6 +45,7 @@ func (sg *SimpleGear) Configure(config interface{}) {
 	log.Printf("Gear Name: %s\n", sg.Config["name"])
 }
 
+// Provide .
 func (sg *SimpleGear) Provide() interface{} {
 	return nil
 }
@@ -59,10 +62,7 @@ func (ug *UUIDGear) Start(m *gm.Machinery) {
 	ug.uuid = 1232
 }
 
+// Provide .
 func (ug *UUIDGear) Provide() interface{} {
 	return ug.uuid
 }
-
-
-
-
