@@ -10,6 +10,7 @@ import (
 // SimpleGear .
 type SimpleGear struct {
 	gm.ConfigurableGear
+	canRun bool
 }
 
 // UUIDGear .
@@ -21,7 +22,7 @@ type UUIDGear struct {
 
 // NewSimpleGear .
 func NewSimpleGear(uname string, config map[string]interface{}) *SimpleGear {
-	return &SimpleGear{ConfigurableGear: gm.NewConfigurableGear(uname, config)}
+	return &SimpleGear{ConfigurableGear: gm.NewConfigurableGear(uname, config), canRun: false}
 }
 
 // Name .
@@ -31,8 +32,9 @@ func (sg *SimpleGear) Name() string {
 
 // Start .
 func (sg *SimpleGear) Start(m *gm.Machinery) {
+	sg.canRun = true
 	go func() {
-		for {
+		for sg.canRun {
 			log.Printf("configuration: %v", sg.Config)
 			uuidGear := (m.GetGear("uuid-gear"))
 			// uGear, ok := (*uuidGear).(*UUIDGear)
@@ -60,6 +62,7 @@ func (sg *SimpleGear) Provide() interface{} {
 // Shutdown .
 func (sg *SimpleGear) Shutdown() {
 	log.Println("simple-gear shut down")
+	sg.canRun = false
 }
 
 //////////// UUIDGear
