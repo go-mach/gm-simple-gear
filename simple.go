@@ -57,6 +57,11 @@ func (sg *SimpleGear) Provide() interface{} {
 	return nil
 }
 
+// Shutdown .
+func (sg *SimpleGear) Shutdown() {
+	log.Println("simple-gear shut down")
+}
+
 //////////// UUIDGear
 
 // Name .
@@ -72,4 +77,9 @@ func (ug *UUIDGear) Start(m *gm.Machinery) {
 // Provide .
 func (ug *UUIDGear) Provide() interface{} {
 	return ug.uuid
+}
+
+// Shutdown .
+func (ug *UUIDGear) Shutdown() {
+	log.Println("uuid-gear shut down")
 }
