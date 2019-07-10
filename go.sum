@@ -63,6 +63,8 @@ github.com/go-mach/gm v0.0.0-20190710150226-c6c1f63ed2c1 h1:EMWJDhw+XiS/MQh3D4On
 github.com/go-mach/gm v0.0.0-20190710150226-c6c1f63ed2c1/go.mod h1:AaJKeFHUwnuB/H2zYor1A5Qz29vgj/ccAbR+1J+KAUc=
 github.com/go-mach/gm v0.0.0-20190710150450-da9dff3a736b h1:KbEyQz99wquIQR90S7VJ4TACzC+qs69oGHeEXyHktRc=
 github.com/go-mach/gm v0.0.0-20190710150450-da9dff3a736b/go.mod h1:AaJKeFHUwnuB/H2zYor1A5Qz29vgj/ccAbR+1J+KAUc=
+github.com/go-mach/gm v0.0.0-20190710151002-dc477492e6ac h1:/EN6TKzFL3QNbZkNpEFrMKBnoHtp3Qs3+23EcZt97yc=
+github.com/go-mach/gm v0.0.0-20190710151002-dc477492e6ac/go.mod h1:AaJKeFHUwnuB/H2zYor1A5Qz29vgj/ccAbR+1J+KAUc=
 github.com/go-mach/gm-simple-gear v0.0.0-20190708133524-2cb844d9f0ca/go.mod h1:Tmd+7o82cJyPpDnFSFO3t/mZ4530dgl1WiNmAy+6Eb8=
 github.com/go-stack/stack v1.8.0/go.mod h1:v0f6uXyyMGvRgIKkXu+yp6POWl0qKG85gN/melR3HDY=
 github.com/gogo/protobuf v1.1.1/go.mod h1:r8qH/GZQm5c6nD/R0oafs1akxWv10x8SbQlK7atdtwQ=
