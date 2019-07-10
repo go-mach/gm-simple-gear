@@ -31,16 +31,18 @@ func (sg *SimpleGear) Name() string {
 
 // Start .
 func (sg *SimpleGear) Start(m *gm.Machinery) {
-	for {
-		log.Printf("configuration: %v", sg.Config)
-		uuidGear := (m.GetGear("uuid-gear"))
-		// uGear, ok := (*uuidGear).(*UUIDGear)
-		//if ok {
-		log.Printf("UUID: %s", uuidGear.Provide())
-		//}
+	go func() {
+		for {
+			log.Printf("configuration: %v", sg.Config)
+			uuidGear := (m.GetGear("uuid-gear"))
+			// uGear, ok := (*uuidGear).(*UUIDGear)
+			//if ok {
+			log.Printf("UUID: %s", uuidGear.Provide())
+			//}
 
-		time.Sleep(2 * time.Second)
-	}
+			time.Sleep(2 * time.Second)
+		}
+	}()
 }
 
 // Configure .
